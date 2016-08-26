@@ -158,7 +158,6 @@ public class StockDetailActivity extends AppCompatActivity {
                 GraphView graph = (GraphView) findViewById(R.id.linechart);
                 LineGraphSeries<DataPoint> lineGraphSeries;
                 DataPoint[] dataPoints = new DataPoint[labels.size()];
-                //graph.getGridLabelRenderer().setNumHorizontalLabels(4);
 
 
 
@@ -171,10 +170,10 @@ public class StockDetailActivity extends AppCompatActivity {
                     }
                     lineGraphSeries = new LineGraphSeries<>(dataPoints);
                     graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(StockDetailActivity.this));
-//                    graph.getViewport().setScrollable(true);
                     graph.addSeries(lineGraphSeries);
+                    graph.setPadding(3, 3, 3, 3);
 
-                    //graph.getGridLabelRenderer().setHumanRounding(false);
+
 
                 } catch (ParseException e) {
                     e.printStackTrace();

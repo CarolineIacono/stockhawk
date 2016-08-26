@@ -14,11 +14,7 @@
     <string name="empty_view_no_stocks">No stocks available</string>
     <string name="offline">Device is offline</string>
     <string name="try_again">Please connect to the internet and try again</string>
-    <string name="talkback_stock_symbol">"Stock symbol "</string>
-    <string name="talkback_change">"Change "</string>
-    <string name="talkback_bid_price">"Bid price "</string>
-    <string name="talkback_percent_change">"Percent change "</string>
-    <string name="talkback_fab_button">Add stock symbol</string>
+
     <string name="graph_content_description">this is a line graph showing historical data</string>
     <string name="invalid_symbol">This stock symbol does not exist</string>
     <string name="error">Error. Please restart the app and try again.</string>
