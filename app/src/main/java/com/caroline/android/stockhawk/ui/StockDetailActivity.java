@@ -158,6 +158,8 @@ public class StockDetailActivity extends AppCompatActivity {
                 GraphView graph = (GraphView) findViewById(R.id.linechart);
                 LineGraphSeries<DataPoint> lineGraphSeries;
                 DataPoint[] dataPoints = new DataPoint[labels.size()];
+                //graph.getGridLabelRenderer().setNumHorizontalLabels(4);
+
 
 
                 SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
@@ -166,13 +168,13 @@ public class StockDetailActivity extends AppCompatActivity {
                         dataPoints[i] = new DataPoint(sdf.parse(labels.get(i)).getTime(), values.get(i));
 
 
-                        graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(StockDetailActivity.this));
                     }
                     lineGraphSeries = new LineGraphSeries<>(dataPoints);
-
+                    graph.getGridLabelRenderer().setLabelFormatter(new DateAsXAxisLabelFormatter(StockDetailActivity.this));
+//                    graph.getViewport().setScrollable(true);
                     graph.addSeries(lineGraphSeries);
 
-                    graph.getGridLabelRenderer().setHumanRounding(false);
+                    //graph.getGridLabelRenderer().setHumanRounding(false);
 
                 } catch (ParseException e) {
                     e.printStackTrace();

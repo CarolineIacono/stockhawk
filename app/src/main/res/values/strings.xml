@@ -20,5 +20,7 @@
     <string name="talkback_percent_change">"Percent change "</string>
     <string name="talkback_fab_button">Add stock symbol</string>
     <string name="graph_content_description">this is a line graph showing historical data</string>
-    <string name="error" />
+    <string name="invalid_symbol">This stock symbol does not exist</string>
+    <string name="error">Error. Please restart the app and try again.</string>
+
 </resources>

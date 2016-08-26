@@ -28,7 +28,6 @@ public class StockWidgetFactory implements RemoteViewsService.RemoteViewsFactory
 
     @Override
     public void onCreate() {
-        // Nothing to do
     }
 
     @Override
@@ -54,7 +53,7 @@ public class StockWidgetFactory implements RemoteViewsService.RemoteViewsFactory
                     mCursor.getString(mCursor.getColumnIndex(QuoteColumns.SYMBOL)));
             rv.setTextViewText(R.id.bid_price,
                     mCursor.getString(mCursor.getColumnIndex(QuoteColumns.BIDPRICE)));
-            rv.setTextViewText(R.id.stock_change,
+            rv.setTextViewText(R.id.change,
                     mCursor.getString(mCursor.getColumnIndex(QuoteColumns.CHANGE)));
         }
         return rv;
