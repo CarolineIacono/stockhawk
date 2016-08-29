@@ -29,5 +29,5 @@
         fab:fab_type="normal"
         fab:layout_anchor="recycler_view"
         fab:layout_anchorGravity="bottom | end"
-        android:contentDescription="click to add stock"/>
+        android:contentDescription="@string/description"/>
 </android.support.design.widget.CoordinatorLayout>
